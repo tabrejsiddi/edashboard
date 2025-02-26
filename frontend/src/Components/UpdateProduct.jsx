@@ -14,7 +14,7 @@ const UpdateProduct = () => {
   //? get product details
   const getProductDetails = async () => {
     console.log(params);
-    let result = await fetch(`http://localhost:3000/product/${params.id}`,{
+    let result = await fetch(`https://edashboard-baqg.onrender.com/product/${params.id}`,{
       headers:{
         Authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
       }
@@ -29,7 +29,7 @@ const UpdateProduct = () => {
   //? update product details to database
   const updateProduct = async () => {
     console.log(name, price, category, company);
-    let result = await fetch(`http://localhost:3000/product/${params.id}`, {
+    let result = await fetch(`https://edashboard-baqg.onrender.com/product/${params.id}`, {
       method: "put",
       body: JSON.stringify({ name, price, category, company }),
       headers: {
