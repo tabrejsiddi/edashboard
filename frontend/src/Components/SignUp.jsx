@@ -18,7 +18,7 @@ export const SignUp = () => {
   // function to collect data and send API request
   const collectData = async () => {
     console.warn(name, email, password);
-    let result = await fetch(`https://edashboard-baqg.onrender.com/register`, {
+    let result = await fetch(`https://edashboard-1-4k64.onrender.com/register`, {
       method: "POST",
       body: JSON.stringify({ name, email, password }),
       headers: {

@@ -13,7 +13,7 @@ const Product = require("./Database/Product");
 // Creating the server and it is an instance of express which is used to define routes and middlewares.
 const app = express();
 const corsOption={
-  origin:"https://edashboard-baqg.onrender.com",
+  origin:"https://edashboard-1-4k64.onrender.com",
   credentials:true
 }
 // Middlewares

@@ -14,7 +14,7 @@ const Login = () => {
   }, []);
   const handleLogin = async () => {
     console.log(email, password);
-    let result = await fetch(`https://edashboard-baqg.onrender.com/login`, {
+    let result = await fetch(`https://edashboard-1-4k64.onrender.com/login`, {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: {
